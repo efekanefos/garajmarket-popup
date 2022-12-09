@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Randevu</title>
+  </head>
+  <body>
+    <button class="reservationBtn">
+      <div class="reservationBtnImgDiv">
+        <img
+          src="./reservationRightArrow.png"
+          alt="reservationRightArrow"
+          class="reservationBtnImg"
+        />
+      </div>
+
+      Randevu Al
+    </button>
+
+    <div class="reservationFormWrapper">
+      <div class="reservationFormContent">
+        <form action="/action_page.php">
+          <h2 class="reservationFormHeading">
+            Nitro Mekatronik
+            <span class="reservationFormHeading--yellow">Garaj Market</span>
+          </h2>
+          <p class="reservationFormDesc">
+            Nitro Mekatronik garaj hizmetlerinden yararlanmak için çağrı
+            merkezimize 0 850 755 02 30 numarasından ulaşabilir veya aşağıdaki
+            randevu formunu kullanarak yerinizi ayırtabilirsiniz.
+          </p>
+
+          <div class="resContactDiv">
+            <h3 class="resContactHeading">İletişim Bilgileri</h3>
+            <div class="resContactInputs">
+              <input
+                type="text"
+                id="garageFirstName"
+                name="garageFirstName"
+                placeholder="Adınız"
+                class="resContactInput"
+              />
+              <input
+                type="text"
+                id="garageLastName"
+                name="garageLastName"
+                placeholder="Soyadınız"
+                class="resContactInput"
+              />
+            </div>
+
+            <div class="resContactInputs">
+              <input
+                type="text"
+                id="garagePhoneNumber"
+                name="garagePhoneNumber"
+                placeholder="Telefon"
+                class="resContactInput"
+              />
+              <input
+                type="text"
+                id="garageEmail"
+                name="garageEmail"
+                placeholder="Eposta"
+                class="resContactInput"
+              />
+            </div>
+
+            <h3 class="resContactHeading">Randevu Detayları</h3>
+
+            <div class="resContactInputs">
+              <input
+                type="date"
+                id="garageDate"
+                name="garageDate"
+                class="resContactInput"
+              />
+              <input
+                type="time"
+                id="garageTime"
+                name="garageTime"
+                class="resContactInput"
+              />
+            </div>
+
+            <div class="resContactDescDiv">
+              <textarea
+                class="resContactDescInput"
+                placeholder="Açıklama"
+                cols="30"
+                rows="7"
+              ></textarea>
+            </div>
+
+            <div class="postButtonDiv">
+              <input class="postButton" type="submit" value="GÖNDER" />
+              <p class="postButtonText">
+                Randevu tarih ve saatinizi lütfen not ediniz.
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
